@@ -1,0 +1,36 @@
+{
+    "name": "picamator/place-search-api",
+    "description": "Search places using Google Map",
+    "keywords": ["search", "place", "map", "google"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergii Pryz",
+            "email": "picamator@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Picamator\\PlaceSearchApi\\": "src/"
+        },
+       	"exclude-from-classmap": [
+            "/dev/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Picamator\\PlaceSearchApi\\Tests\\Unit\\": "dev/tests/unit/src",
+            "Picamator\\PlaceSearchApi\\Tests\\Intergation\\": "dev/tests/integration/src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "silex/silex": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.5",
+        "phpdocumentor/phpdocumentor": "2.*",
+        "satooshi/php-coveralls": "~1.0"
+   }
+}
