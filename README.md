@@ -58,10 +58,10 @@ Response:
             "vicinity" : "Pyrmont Bay Wharf Darling Dr, Sydney",
             "scope" : "GOOGLE"
         }
-    ]
+    ],
     "count": 1,
     "link": [
-        "self": "/bar?location="54.3476107,18.6503288"&radius="2000"
+        {"type": "self", "uri": "/bar?location="54.3476107,18.6503288"&radius="2000"}
     ],
     "code": 200
 }
@@ -128,6 +128,11 @@ It's automatically invalidate after 24 hours.
 Moreover it's implemented functionality to avoid saving duplicate information in cache.
 In other words cache key builds based on query parameters and contains only list of location coordinates.
 But each entity saves in separate cache.
+
+Documentation
+-------------
+* UML class diagram: [class.diagram.png](doc/uml/class.diagram.png)
+* Use case diagram: [activity.diagram.png](doc/uml/activity.diagram.png)
   
 Future features candidates
 --------------------------
