@@ -23,8 +23,8 @@ The endpoint is `http://place-search.dev/api/v1` where
 * `v1` - version parameter
 
 ### Resources
-Name  | Method | Required parameters    | Optional parameters | Example
----   | ---    | ---                    | ---
+Name  | Method | Required parameters    | Optional parameters   | Example
+---   | ---    | ---                    | ---                   | ---
 bar   | GET    | name, location, radius | lang | GET:bar?location="54.3476107,18.6503288"&radius="2000"
 
 ### Parameters
@@ -45,7 +45,7 @@ GET:bar?location="54.3476107,18.6503288"&radius="2000"
 Response:
 ```json
 {
-    data: [
+    "data": [
         {
             "id" : "21a0b251c9b8392186142c798263e289fe45b4aa",
             "placeId" : "ChIJyWEHuEmuEmsRm9hTkapTCrk",
@@ -59,11 +59,11 @@ Response:
             "scope" : "GOOGLE"
         }
     ]
-    count: 1,
-    link: [
-        self: "/bar?location="54.3476107,18.6503288"&radius="2000"
+    "count": 1,
+    "link": [
+        "self": "/bar?location="54.3476107,18.6503288"&radius="2000"
     ],
-    code: 200
+    "code": 200
 }
 ```
 where:
@@ -80,8 +80,8 @@ Please view [feature candidate document](FEATURE.CANDIDATE.md) or open an issue 
 All errors message have one format that is described bellow:
 ```json
 {
-    msg: "500 Internal server error",
-    code: 500
+    "msg": "500 Internal server error",
+    "code": 500
 }
 ```
 
