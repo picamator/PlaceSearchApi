@@ -1,0 +1,25 @@
+version: '2'
+services:
+  web:
+    build:
+        context : .
+        dockerfile: app/Dockerfile
+        args:
+          - host_ip
+    ports:
+      - "2225:22"
+      - "8080:80"
+    volumes:
+      - ../../:/var/www/PlaceSearchApi
+    links:
+      - mongo:mongo
+      - rabbitmq:rabbitmq
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  rabbitmq:
+    image: rabbitmq:3.6.5-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"

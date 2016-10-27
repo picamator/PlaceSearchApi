@@ -9,10 +9,11 @@ But it's possible to integrate different search engine using applications Adapte
 
 Requirements
 ------------
-* PHP 7.0
-* Silex framework
-* MongoDB
-* RabbitMQ
+* [PHP 7.0](http://php.net/manual/en/migration70.new-features.php)
+* [Silex](http://silex.sensiolabs.org/)
+* [MongoDB](https://www.mongodb.com/)
+* [Mongodb pecl](https://github.com/mongodb/mongo-php-library)
+* [RabbitMQ](https://www.rabbitmq.com)
 
 Specification
 -------------
@@ -61,7 +62,7 @@ Response:
     ],
     "count": 1,
     "link": [
-        {"type": "self", "uri": "/bar?location="54.3476107,18.6503288"&radius="2000"}
+        {"type": "self", "uri": "/bar?location='54.3476107,18.6503288'&radius=2000"}
     ],
     "code": 200
 }
@@ -133,6 +134,20 @@ Documentation
 -------------
 * UML class diagram: [class.diagram.png](doc/uml/class.diagram.png)
 * Use case diagram: [activity.diagram.png](doc/uml/activity.diagram.png)
+
+Developing
+----------
+To configure developing environment please:
+
+1. [Install and run Docker container](dev/docker/README.md)
+2. Run inside project root in Docker container `composer install` 
+
+### Debug
+Docker container is configured to use xDebug.
+
+### Proxy
+Please use proxy client to see requests to Google Places API, e.g. [Fiddler](https://www.telerik.com/download/fiddler)
+for Windows or [Fiddler for Mono](http://fiddler.wikidot.com/mono) for Linux machine. 
   
 Future features candidates
 --------------------------

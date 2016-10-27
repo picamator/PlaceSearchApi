@@ -26,11 +26,12 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "silex/silex": "~2.0"
+        "silex/silex": "~2.0",
+        "php-amqplib/php-amqplib": "~2.6",
+        "mongodb/mongodb": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.5",
-        "phpdocumentor/phpdocumentor": "2.*",
         "satooshi/php-coveralls": "~1.0"
    }
 }
