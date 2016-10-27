@@ -20,7 +20,7 @@
     "autoload-dev": {
         "psr-4": {
             "Picamator\\PlaceSearchApi\\Tests\\Unit\\": "dev/tests/unit/src",
-            "Picamator\\PlaceSearchApi\\Tests\\Intergation\\": "dev/tests/integration/src"
+            "Picamator\\PlaceSearchApi\\Tests\\Integration\\": "dev/tests/integration/src"
         }
     },
     "minimum-stability": "stable",

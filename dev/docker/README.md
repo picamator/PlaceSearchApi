@@ -35,7 +35,8 @@ SSH credentials:
 
 To make connection by console simple run `ssh root@0.0.0.0 -p 2225`.
 
-_Note_: it's not working now.
+_Note_: if conection was refused just checkout inside container does ssh service was run `service ssh status`,
+in case it's not running execute `service ssh start`.
 
 #### Bash
 To open console inside `web` container please run  `sudo docker-compose -f ./dev/docker/docker-compose.yml exec web bash`
