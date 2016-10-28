@@ -1,7 +1,7 @@
 <?php
 namespace Picamator\PlaceSearchApi\Model\Api\Data;
 
-use Picamator\PlaceSearchApi\Model\Data\CollectionInterface;
+use Picamator\PlaceSearchApi\Model\Api\Data\CollectionInterface;
 
 /**
  * Value object for search result

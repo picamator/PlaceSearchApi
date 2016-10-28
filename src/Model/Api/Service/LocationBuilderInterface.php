@@ -13,7 +13,7 @@ interface LocationBuilderInterface
     /**
      * Sets latitude
      *
-     * @param float $latitude
+     * @param float $latitude [-90, 90]
      *
      * @return LocationBuilderInterface
      *
@@ -24,7 +24,7 @@ interface LocationBuilderInterface
     /**
      * Sets longitude
      *
-     * @param float $longitude
+     * @param float $longitude [-180, 180]
      *
      * @return LocationBuilderInterface
      *
