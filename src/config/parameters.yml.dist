@@ -1,0 +1,4 @@
+http_client_place:
+  endpoint: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
+  token: 'You Google Place token: https://developers.google.com/places/web-service/get-api-key'
+  proxy: 'optional for debugging only'

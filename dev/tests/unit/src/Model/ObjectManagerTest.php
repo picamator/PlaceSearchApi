@@ -23,7 +23,7 @@ class ObjectManagerTest extends BaseTest
      *
      * @param array $arguments
      */
-    public function testCreate($arguments)
+    public function testCreate(array $arguments)
     {
         $className = '\DateTime';
 
@@ -37,7 +37,7 @@ class ObjectManagerTest extends BaseTest
      */
     public function testFailCreate()
     {
-        $this->objectManager->create('\Picamator\CacheManager\Cache\KeyGenerator', [1, 2]);
+        $this->objectManager->create('\Picamator\PlaceSearchApi\Model\ObjectManager', [1, 2]);
     }
 
     public function providerCreate()

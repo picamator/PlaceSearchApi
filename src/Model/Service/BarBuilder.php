@@ -9,6 +9,9 @@ use Picamator\PlaceSearchApi\Model\Api\ObjectManagerInterface;
 use Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface;
 use Picamator\PlaceSearchApi\Model\Exception\RuntimeException;
 
+/**
+ * Builder for Bar value object
+ */
 class BarBuilder implements BarBuilderInterface
 {
     /**

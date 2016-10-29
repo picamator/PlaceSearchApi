@@ -19,8 +19,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Picamator\\PlaceSearchApi\\Tests\\Unit\\": "dev/tests/unit/src",
-            "Picamator\\PlaceSearchApi\\Tests\\Integration\\": "dev/tests/integration/src"
+            "Picamator\\PlaceSearchApi\\Tests\\Unit\\": "dev/tests/unit/src"
         }
     },
     "minimum-stability": "stable",
@@ -28,6 +27,10 @@
         "php": ">=7.0",
         "ext-bcmath": "*",
         "silex/silex": "~2.0",
+        "symfony/yaml": "~3.0",
+        "symfony/config": "~3.0",
+        "psr/http-message": "~1.0",
+        "guzzlehttp/guzzle": "~6.2",
         "php-amqplib/php-amqplib": "~2.6",
         "mongodb/mongodb": "~1.0"
     },

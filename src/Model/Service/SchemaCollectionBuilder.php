@@ -3,22 +3,22 @@ declare(strict_types = 1);
 
 namespace Picamator\PlaceSearchApi\Model\Service;
 
-use Picamator\PlaceSearchApi\Model\Api\Data\BarInterface;
 use Picamator\PlaceSearchApi\Model\Api\Data\CollectionInterface;
-use Picamator\PlaceSearchApi\Model\Api\Service\BarCollectionBuilderInterface;
+use Picamator\PlaceSearchApi\Model\Api\Data\SchemaInterface;
+use Picamator\PlaceSearchApi\Model\Api\Service\SchemaCollectionBuilderInterface;
 
 /**
- * Builder for Bar collection
+ * Builder fo Schema collection
  *
  * @codeCoverageIgnore
  */
-class BarCollectionBuilder implements BarCollectionBuilderInterface
+class SchemaCollectionBuilder implements SchemaCollectionBuilderInterface
 {
     /**
      * @todo use private constant ofter migration to PHP7.1
      * @var string
      */
-    private static $type = 'Picamator\PlaceSearchApi\Model\Api\Data\BarInterface';
+    private static $type = 'Picamator\PlaceSearchApi\Model\Api\Data\SchemaInterface';
 
     /**
      * @var ObjectManagerInterface
@@ -50,9 +50,9 @@ class BarCollectionBuilder implements BarCollectionBuilderInterface
     /**
      * {@inheritdoc}
      */
-    public function addBar(BarInterface $bar) : BarCollectionBuilderInterface
+    public function addSchema(SchemaInterface $schema) : SchemaCollectionBuilderInterface
     {
-        $this->data[] = $bar;
+        $this->data[] = $schema;
 
         return $this;
     }

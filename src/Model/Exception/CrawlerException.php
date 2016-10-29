@@ -2,9 +2,9 @@
 namespace Picamator\PlaceSearchApi\Model\Exception;
 
 /**
- * Crawler interface
+ * Crawler exception
  */
-class CrawlerException extends \RuntimeException implements ExceptionInterface 
+class CrawlerException extends \RuntimeException implements ExceptionInterface
 {
     
 }
