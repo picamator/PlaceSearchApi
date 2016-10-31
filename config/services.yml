@@ -104,3 +104,7 @@ services:
     class: 'GuzzleHttp\Client'
     factory: ['Picamator\PlaceSearchApi\App\Di\Guzzle\ClientFactory', 'create']
     arguments: ['@search_config', '@model_object_manager']
+
+  guzzle_client_mock:
+    class: 'GuzzleHttp\Client'
+    factory: ['Picamator\PlaceSearchApi\Tests\Integration\Fixture\Guzzle\ClientFactory', 'create']

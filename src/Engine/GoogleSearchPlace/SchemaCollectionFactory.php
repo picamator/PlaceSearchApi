@@ -90,21 +90,26 @@ class SchemaCollectionFactory implements SchemaCollectionFactoryInterface
      */
     public function create() : CollectionInterface
     {
-        return $this->createCollection(self::$schema);
+        $schemList = $this->getSchemaList(self::$schema);
+
+        return $this->buildCollection($schemList);
     }
 
     /**
-     * Collection builder
+     * Retrieve schema list
      *
      * @param array $schema
      *
-     * @return mixed
+     * @return array
      */
-    private function createCollection(array $schema) : CollectionInterface
+    private function getSchemaList(array $schema) : array
     {
+        $result = [];
         foreach ($schema as $item) {
             if (!empty($item['schema'])) {
-                $subSchemaCollection = $this->createCollection($item['schema']);
+                $subSchema             = $this->getSchemaList($item['schema']);
+                $subSchemaCollection   = $this->buildCollection($subSchema);
+
                 $this->schemaBuilder->setSchemaCollection($subSchemaCollection);
             }
 
@@ -113,11 +118,26 @@ class SchemaCollectionFactory implements SchemaCollectionFactoryInterface
                 ->setDestination($item['destination'])
                 ->setBuilder($item['builder']);
 
-            $schemaInstance = $this->schemaBuilder->build();
-            $this->collectionBuilder->addSchema($schemaInstance);
+            $result[] = $this->schemaBuilder->build();
+
         }
 
-        // attention: build clear all previously set data
+        return $result;
+    }
+
+    /**
+     * Build collection
+     *
+     * @param array $data
+     *
+     * @return CollectionInterface
+     */
+    private function buildCollection(array $data) : CollectionInterface
+    {
+        foreach($data as $item) {
+            $this->collectionBuilder->addSchema($item);
+        }
+
         return $this->collectionBuilder->build();
     }
 }

@@ -1,0 +1,893 @@
+{
+  "html_attributions": [],
+  "next_page_token": "nex-page-token-was-hidden",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.35200380000001,
+          "lng": 18.6504951
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3521703,
+            "lng": 18.65059885
+          },
+          "southwest": {
+            "lat": 54.35194830000001,
+            "lng": 18.65041305
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "2a293ddb8ddfdc1d65274d12c8465e50a3fe68ef",
+      "name": "Cafe Szafa",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1520,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117219550168252624605/photos\"\u003eGrzegorz Kowalczyk\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAPAhZFQNIsNOxEDW_8nOijGJ5VNYa49HhMA1B50VSwudobpIaKdE1t7zeX3pCbH8nzeAAS0PoheFDja4m4EgWAtyg251PtWLTqKqmvUP92XkGlOKXkLJv10g9sHqHv_3b1dwNgJGEu-IBUb7SeAkSqb1KgM7fZVAkcadg0wv5r8wEhAOX_KxBFBcCHJE03zqZfKTGhRNHsJymbflw45XT786sl-8B8x2Ew",
+          "width": 2688
+        }
+      ],
+      "place_id": "ChIJkaVEf3Vz_UYRQdJXi93rMuo",
+      "rating": 4.1,
+      "reference": "CmRSAAAAnw0r5TxbI2aKcQULjA2azdUH6AQC-Ius_1WkfzvuPv7XHsmT6fpdZDyiYgWicVpXTAA3EdfD_jhbhi_Jb_aT7TbfaDxa9ZLdUVjDpL9xWrWqzNDyYYz3KoW1TKhTY0zgEhDuUWSL9QLDdArfhvOnKAEzGhTUVVB2jZPgnISuIQscUZi8FOMAKA",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "night_club",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Podmurze 2, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3488096,
+          "lng": 18.6545734
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3489167,
+            "lng": 18.6546295
+          },
+          "southwest": {
+            "lat": 54.3487739,
+            "lng": 18.6545547
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "ac6dc9a25540ab0c140d064bf760e9590ba06680",
+      "name": "Flisak '76",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1363,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/114345491031044239774/photos\"\u003eFlisak &#39;76\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAALz5m4BcgngDTFqk7DDXRZJ1d4slvjRFjaKpypGeTS2g-rpyG8AYRax5zUOAKJasywik5P7KDvB3_-CGV5jx3Pb80clGEoPYnZ5m-5ZhOl6tRB1hrG4qBb7tEOyXlDCHKnCJPryHwHtDBRK-7zJlKLq0lpxznCc6mP1BpgIjOlHUEhBvsTp9c6QwEPB_9fL1QEWFGhSnjiw-wqfMCPWM1q_WaTdsHpXajw",
+          "width": 1382
+        }
+      ],
+      "place_id": "ChIJgR05NqBz_UYRiSvNTd7JUzk",
+      "rating": 4.5,
+      "reference": "CmRRAAAAMqBO-kHKJ8Wg6CJByu3I9QttGjQHQ4lZZM9LMCV_M1PeEOyfPkpbwP3rrEEWTt3O4UnS6FIzchsqcA9tbiEupMs_lTEsIQjkAxIR11zENdCncrVwBiJSt7AkB4jYN-xQEhBUf1XAG9-Lorn8ZpM8pDwaGhTfzIJ0iXR9mTIp5Hfz9PixcffDwg",
+      "scope": "GOOGLE",
+      "types": [
+        "art_gallery",
+        "night_club",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Chlebnicka 9, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3545683,
+          "lng": 18.6546463
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35459665,
+            "lng": 18.6549619
+          },
+          "southwest": {
+            "lat": 54.35455885,
+            "lng": 18.6545411
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "57e8ef4008ca41c4da98042bab4bcfab359e6375",
+      "name": "Klubogaleria Bunkier",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 533,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101531473423476121349/photos\"\u003eKlubogaleria Bunkier\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAAITLJFzmyzEUDzisj5RFg6PHf-44FoLk5f78oPKKrt6ClWHOquuEg7yr9huQImOXe_omBRPrq_pAJNH2rMAr1aAve1FCRuxv3jGF_jbhDrSgF80rVvO9fcXACzj4D_m5YNfgQE9Duhbxmnlo7uJttpVQ-B_3BUj8T3PCgxoTxUY3EhCfmX-w0xDcsM-qRTXiqe5zGhSGovEzdmJHof-JcTN4jnQ694cv_Q",
+          "width": 533
+        }
+      ],
+      "place_id": "ChIJx8lP3HRz_UYRDrGAU6E7FF8",
+      "rating": 4,
+      "reference": "CmRRAAAANrJwU-Sm25tORVeclS8f5CIs6LbL5NWR0mSHoM24j9ftiHOFP-knIZPAwHxtLZQLexzvLFZplhpB6azvj9AZz515iWpB6hyTUdoW4Qe70O5oyWUz5WniHR-xATlw5QBsEhA8837u8o-HiR_cpa4dPT7YGhQfETQ4LQvBQC82wRJEQstQpzCwtw",
+      "scope": "GOOGLE",
+      "types": [
+        "art_gallery",
+        "night_club",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Olejarna 3, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.353305,
+          "lng": 18.6496782
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35332035,
+            "lng": 18.6500712
+          },
+          "southwest": {
+            "lat": 54.35329694999999,
+            "lng": 18.6495472
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "0b8c1c500ea294aeab07978ec68505729e438e2e",
+      "name": "LOFT",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 667,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103380870555989991226/photos\"\u003eLOFT\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAAP6THB4RIIoONrZEXz7vE1h7rMJ14YCh8qCQjzj_zOJHdAD219hoa4p2TFqA6eYuZkLqFXI71vT7khQr2RrPEJXRX-kJFL4ccIF5iqbQlK5KZImbf7F-qwEu0xbhmrZgH0LY--T3kSnDVSN9MockbVxlzy2Vujw2fwBFCwwGiMs0EhAxqpTvkHug_ncpJp1DB_slGhSnVMZ0OiITcvYfbQIpWX-s_9PYFQ",
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJHcEmlnVz_UYRoWymWwYWfzA",
+      "rating": 4.7,
+      "reference": "CmRRAAAAcMqg4cov_kAGeBVpU5Mhrq9ocIOSN4tYZjsJN537NAwq-2lrk9T7re7odg6je8_vsP-O5ZPNEVcBjdQLmOErddrCYYlwUfwwuxRvqR2wGe5586rT5m2NlNbhvgRCyfhzEhAb2OCBa0OyD_8zDA5vrYjkGhTmR8973E0x-JZVu2hy7qj4Vt6oZw",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Młyńska 15, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3539379,
+          "lng": 18.6482064
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35397930000002,
+            "lng": 18.64841715
+          },
+          "southwest": {
+            "lat": 54.35392409999999,
+            "lng": 18.64813615
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "0f94d73a574a1bde8cbe06e1f7df5003c2c66baf",
+      "name": "Irish Pub",
+      "photos": [
+        {
+          "height": 999,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/104060314404480017176/photos\"\u003eMANUEL BERNARDO ARES ARES\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAH1aH6hZwSyVA-9XRpaUcm1LVACCys_OvAROsMIKLbbiAnjl0wFVE5b_9BhOyZFPYFmgpXe_m1Nl355WjSECQvcX5S-XZ31uzzKwsiYy_6LUF9e6tA4oKKWsja9c5JObeBaUA4mrSRBDBQP1YNJ2O9j9KhmuE8Y-Q3ibpc6E-B0uEhCheIKeCFdg7dWC3g3PRGIrGhS7ER9EzCKgYXsxSQxvgS9BrOppNw",
+          "width": 682
+        }
+      ],
+      "place_id": "ChIJw_Jv3HVz_UYRSjRyXDhc1H0",
+      "rating": 3.3,
+      "reference": "CmRRAAAAQowuBYmJqg0yK9lYNS_nvKDoCg1P2EsvALlgJq1DnYS8ylD4oXZf_tLogA_6hvi5xMWESSZLTmbL9Ruug0NjD8ZTPywiPlxZDjCXjhahFXs46RoDFY-UleFCb00l3t1-EhAq7taZHdvBLKOgZlY0RcfZGhQH2XwMsfdxr8lfaQxdDB1LnMSeKw",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Korzenna 33/35, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.35409,
+          "lng": 18.6595943
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35412240000001,
+            "lng": 18.6597722
+          },
+          "southwest": {
+            "lat": 54.3540028,
+            "lng": 18.659535
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "001663f1cfeef7d5008e00587f69de07402484c9",
+      "name": "Degu-Degustatornia",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2304,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103360122194969849293/photos\"\u003eMarek Adamkiewicz\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAKOUY6Q3ug7wjJWRZ56JvK8k8msJM5p9J3LLe8W9V8iD2a2LnGXvvM0ZaG3twWCbH20gkeL3JIi0oLtLfatydMW_-dodl_4UIXt9uso8TP8LOcEX-0N-TV3497u9bicxxj2VTEtckeVnV",
+          "width": 4096
+        }
+      ],
+      "place_id": "ChIJXbLbEQtz_UYRksRm0i4pryY",
+      "rating": 4.3,
+      "reference": "CmRRAAAA9x5NLCjgJGimTakn5jdxg9R2IZAro_JsiZKzqC6-xG7fnidpSB0y_SV1O-F6tDN6yc3_2--SLjh07H5KnV6HO0wL3kekUAe6xx4H5DubCEfrGnsGpVeFkmDo4spK7Vc9EhBpWFKRFebtishYrCCcilYqGhSq5IOcJi0qoc3k7SY8Sl8TfG2vdw",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "liquor_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Grodzka 16, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3488323,
+          "lng": 18.65159079999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.34904305,
+            "lng": 18.65162624999999
+          },
+          "southwest": {
+            "lat": 54.34876204999999,
+            "lng": 18.65148445000001
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "e875f25de22e11f9dd1174abbabd5891c4099709",
+      "name": "Bar Mleczny NEPTUN",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3134,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117704098589910216033/photos\"\u003eKrzysztof Walencik\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAANv3pzxwVHD03e_0ia23oIJf3QXavc9_aKAtDwE0WRA8c1rqVcG6dU0pCqPbPAocIwlGAzF34WY0_53s8dn3wCJQU4srsND_CR-jwgFY6hqkFBzlWL2e0G3ruIT3e4ChyUkhAbbBvjBmfhGhcHbZ3UKab38kH9P7E4kMSTYi22GLEhAqnG39ERThM0GECFfi-nMTGhQ6SdrDvX5f9pg1D5I0YCvJynShtw",
+          "width": 7692
+        }
+      ],
+      "place_id": "ChIJnUf_d59z_UYR3GSy5w4k2Mo",
+      "rating": 3.2,
+      "reference": "CmRSAAAAYfyYCwdKWQ-7IhrwJbfDrlW44mbbgRZYBk2wiEnIQfCDHmedZbcGx1ZGV9L96s0bppSUWNqsKgckWqGXU_n6UUaF7UyCcIqSSTwTeYzDt9pzLqDmaFGfdVI80LLDAm3kEhDEEhI_igTouwRfioXs5ilKGhR7H-utYBlv-2XjIvR05Snqxy3v0w",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Długa 33/34, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.35099959999999,
+          "lng": 18.6486427
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35172290000001,
+            "lng": 18.6492037
+          },
+          "southwest": {
+            "lat": 54.35075849999999,
+            "lng": 18.6484557
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "226282b03c84b9add4411260ed88981c497cb459",
+      "name": "Cafe Absinthe",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1897,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117704098589910216033/photos\"\u003eKrzysztof Walencik\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAAtEAGMkB1C2owIaaEwigQ1bKE0HuDcyqH62MTB9fUlHLpGW_HqipVtOmhcLRBDzpSaLUJs_ZGJEvvtYmwgqwTY5HKm0YBmH7CRd4jv3KS0ncbiVQ7tAFS1YzUEwCCmuN_8X6chcO9usRhlxmaFvAWTh7tqp9-S7OK_Avr9mHca7EhCgKtm-wav9IHUHBIsD_vdKGhRtdKOTx8B2k7D66tJ7SgxWt1ARfA",
+          "width": 2844
+        }
+      ],
+      "place_id": "ChIJLY2qOp5z_UYRWd-Czw17ZaU",
+      "rating": 3.8,
+      "reference": "CmRSAAAAekeqkuSo83hXFaF15SAWyHileMjErOTlABLjm1taFvkznRUDIUn5pPJrOD0D3pugAQKQVfLcUYS9VjUuGf-w31Pjkj_ZcrH-EoUcE6Q0KCiWEsr-tJ2qWofcG8enSwQxEhD02PMjNAlN7Yzd8c7wvCXiGhTFB8YjcAO_M9IPZVjFGIj_VmMeBQ",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "night_club",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Świętego Ducha 2, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.352931,
+          "lng": 18.647092
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35295215,
+            "lng": 18.64720335
+          },
+          "southwest": {
+            "lat": 54.35291315,
+            "lng": 18.64699795
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "id": "c27ba66b39e677eaeab5e7b3d237e52a3361b396",
+      "name": "18 Południk - Herbaciarnio-Kawiarnia Podróżnicza",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 671,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/116407955096729427064/photos\"\u003e18 Południk - Herbaciarnio-Kawiarnia Podróżnicza\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAAGp-mH-ZX8H6jqKKV2F7epj_YqAgSRbH019QpimeLL7iwsuCqsP5mylGVZ5B8xuM7iV6TWAQbfBaH8sVhd9ywNP2MNoh2Y0z8Si2oT_96qZYw44lY8UiT0tCVhlvs-iOq_FOQniw9LzoDXXFEZ2R9mRRWRTcMKGu14MADVFFW6u4EhBYVOF2aLaf_5pvzUyY8--5GhSB2sruwudrLTrdiuWmzQ58VNAEJQ",
+          "width": 1004
+        }
+      ],
+      "place_id": "ChIJK1eQ_HVz_UYR9Qd93r5LqA4",
+      "rating": 4.5,
+      "reference": "CmRRAAAAFVxK3pjhhfRay9tl6rmX_y3LQDIl_JEua62MDM7drceKtB2lgclQA6iAaGFkROKlSW8g06on50tqtBbc5aqmtBXH0mrSRYfFKNEpFyGb75On9C2TLEepjJykP46UYjGNEhAAd19QCagYsilIYgv3uG_4GhTsCauKBDvmhcFWcwf1UMY5RwQiUg",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "bar",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Garncarska 7/8/9, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.353222,
+          "lng": 18.652391
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "ce12d97458a0494eb1f504657a8b6db0bc265926",
+      "name": "Centrum U7 Gdańsk",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3006,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109546429669594102754/photos\"\u003eJan Sverre Ramsdal\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAL4vhKZDdLFBZ72kWygiLug8JMJtGF-4Ibf1FxVXAP0s02sQr_fn2KbOK-kSaUaZo8EqF1iFl2ylMrh4XmOWBkYtegTPH53PJJE05UH_cESQEqcwmhmlSXKdHndfesGcfNoG_tEhEDtk-jrj2n_P7uTxK7Z7eNAvcCKRXqyQ_oj7EhA06Hi060bf41pzlDvwHTYgGhQ0zjoQfyxE5Aqg1W-nX8VM2rifCQ",
+          "width": 5344
+        }
+      ],
+      "place_id": "ChIJNejCCnVz_UYRffV-6hBN48U",
+      "rating": 4.2,
+      "reference": "CmRSAAAAaqliy9cHNgzy_FnHiMXmrU54RxuHlCM5l8BBQuZUSUdrJ55XtfjEKvWPiLUzzqaNEQDzd28U0AhL1IpHZsV__wkiol-qJqTCeJmMQ0mc3xRvTFkO3IbfKW1RO3Ek4Nf7EhA8Zs9TLrSOG4ne335VI6drGhSAO3jUupkasanahRrDB_CRwFdiGA",
+      "scope": "GOOGLE",
+      "types": [
+        "bowling_alley",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "pl. Dominikański 7, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.351229,
+          "lng": 18.657649
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "d6c3a912ec03bbc968dbb0d88c77bc5c47eabf64",
+      "name": "Zafishowani",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3858,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103287790950104116001/photos\"\u003eZafishowani\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAB-l4gzA6t2fPxniy1rbM-YHW8QmoymA7ohiz-EPSllFceKYzLZkPwHAPMgVCZKxaHd8JuRGr2IVP8U0imuUHc_w4x-gjMH0EDBrZKMJtuaFP1o_TmzxYyuc9F_YS3Qhk4uEjJAmd-L0fUa943c76IZP4MC1J7NOO-d0XhoLr6VCEhDV1oMNu4iXaMnscLz9tVLNGhRQ2bkA09yYZp209ZoKjAePn-s1DQ",
+          "width": 5780
+        }
+      ],
+      "place_id": "ChIJffjCmgpz_UYReIjOHvh3JZg",
+      "rating": 4.6,
+      "reference": "CmRSAAAAwMmkg-Qplx3s3EVoZHvMvpJ0mjKxFpH989kBySd6FwIvLOTIHD7lx51_FJwv2h0OGtD1JyEWnmt_Cn-I_T-KZiOQEebphISLbs99Syr2kpvziTHdmIq2x_M4goEJlppvEhBqHZWfIfdElJy7A9feybXmGhQxcp_PZSHmVgy48bUY1Psuy58i1Q",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "ul. Tokarska 6, wejście od ul. Długie Pobrzeże, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3505565,
+          "lng": 18.6527194
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.35059035,
+            "lng": 18.652727
+          },
+          "southwest": {
+            "lat": 54.35045495000001,
+            "lng": 18.6526966
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "c169434c1b05691aa2ad4298a816f6685bf9c3d9",
+      "name": "Winiarnia Pietraszek",
+      "place_id": "ChIJXbXY8Z9z_UYR1pYZUFXKXh8",
+      "reference": "CmRRAAAAhW0SlSZSNfBKwtyQ-YnFusS9YzxJrlIznTZsjjXeYi-MJZx5Y4GkoyBwRUbVsiC3WiL3U01An1sFcqUN-glwC_G7J8AxdLtPXv_abwP4pcMPSWdk_vlnqk6pzFSdArq2EhCZuIA4ZH88SE5o9AVAOjxUGhSneqIkXn3K-KSrDwWoCek9desbxQ",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Świętego Ducha 57, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3495475,
+          "lng": 18.6522773
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.34977625000001,
+            "lng": 18.65237225
+          },
+          "southwest": {
+            "lat": 54.34947125000001,
+            "lng": 18.65199245
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "3cafc17d3ad43323511e362e620f004ada6b21a0",
+      "name": "Mono",
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109160621668636156343/photos\"\u003eCathal Cranney\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAAD3sl8WsAlAp6Jnl-BU-NyqFl59c6XkvHCsSa2eZTZKp6EwAZBgFSmnaXH-ze8-lR1BnzF1yFnmaQ_Yua5AnlK0Y2CbksZEoNTzdONmYMsAPI11f1ZKL0QoToSpoCixWEJHe0BEC_JhPWbOLpKDCYmDrFVLmLjfKVPbo4DT_ASSlEhCk6p-tx1bAINtM7K81zIWGGhQ8uDxtYezIl23uoDVRVUM78ddYmA",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJw2wfjp9z_UYRvMZx2SoF24c",
+      "rating": 3.8,
+      "reference": "CmRSAAAAc6mecpaABqyB8N1BBMQbTMs3c4tCmL3oBXHI-lwtKCIFWmNFLHA2-p9SE7lAisMQyoIzgKidjERehamQxJmBzqwV3LWPjah7i2EimiPSOHzgH4O2F1MuLYRY-vEaf9lSEhDScBmb3lfVwMZtqE4vPcQJGhSetKjyiZQ5XI7s4qOdXUcSMH0Jjg",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Piwna 28, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.35315469999999,
+          "lng": 18.6451013
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3532207,
+            "lng": 18.64535675
+          },
+          "southwest": {
+            "lat": 54.35313269999999,
+            "lng": 18.64501615
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "f2939857abfe0e64520266214ba8250f2870aabc",
+      "name": "Central Club",
+      "photos": [
+        {
+          "height": 612,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/104417683538106222104/photos\"\u003eCentral Club\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAAB1mZAi15qQzHAW9WXP4Q6geVCWeUD8VwXa74r9h83SjIv0HoSuwwZu9c9OPH8mfZzxX1e9FFFueU1LMpNwBKjg2MavHG1-3_bMHKhUn-xi-b8gshTN2GaLcqtTlSh41m7EmYGClBAVIAlD1s-Qnpy7E3mpQjO7MfjqgkhfQFpxPEhCBUnu4-EjqAG_ESt6SnvBcGhSt2HOh6bMO97Llciv4wRNqfxUgdg",
+          "width": 425
+        }
+      ],
+      "place_id": "ChIJAyAbGXZz_UYRWDwowVI3hNM",
+      "rating": 4,
+      "reference": "CmRSAAAA56hnH0lPCSWJrD8W4GsuJKM4qTQLqsRYurcJZ6XVGEvc9lT1LKVxe7TC7K3WPkp6OHa6q5QPfPowCpdo54ZtWqCBKIf1H79QIPL0ZeWQ0hNQzrOev5B_sTMcp1JduxVaEhDpaPWArfNcDw1SY92qgY4cGhRbacADkA0C_oTLaPjzg4NvhXM0rg",
+      "scope": "GOOGLE",
+      "types": [
+        "night_club",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Wały Jagiellońskie 5, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.34962179999999,
+          "lng": 18.6484727
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.34967389999999,
+            "lng": 18.64902020000001
+          },
+          "southwest": {
+            "lat": 54.3494655,
+            "lng": 18.6482902
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "7d8e2c0a2f6ee21830183e17ac708ae563eca800",
+      "name": "Bruderschaft | Pub Gdansk",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 632,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103814110701225305340/photos\"\u003eBruderschaft | Pub Gdansk\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAACMi2Jp2YkVsBBz9Qx3u3IQQw458RkCMSvYD5DGaU-Sih4hyNG2Pgv2qrrI9nJOsmdyEHv_N4ZKcuqQT-YBvjdEp9OtV6Y56YotjIUckCsAfxPIoptZE1S4oft7OpNFvtFrDvp_Dd-Cf7xyvi8BLs2CJ9MtdWWriIcTlqfbwxpFnEhDUjEXY30Z0Ds7ST6gt2G2hGhR2JzesVMTMytu59ivaVXmrN8huLQ",
+          "width": 632
+        }
+      ],
+      "place_id": "ChIJG36MU55z_UYRjeymdR4O2so",
+      "rating": 4.4,
+      "reference": "CmRSAAAAUiNJQQH4Ma_es3hzWKUppqQIdNOdwyfmCKM3-7YhLv-aoYG_ekZSZ2e-uFm70LmB-zh7kn9ih3jxFuCG65VEJWilz1JLyNBB1Qm3eAYCSBunysPT-aIyj7-S40OWc-AqEhAUrvFUVf0mijSju57BbQW_GhSgvjZ8WQUa3_GTBpstie0ARMRHkQ",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Długa 81, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.352743,
+          "lng": 18.6575306
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3527483,
+            "lng": 18.65772605
+          },
+          "southwest": {
+            "lat": 54.3527271,
+            "lng": 18.65746545
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "8bc79d1b601884b79bba876af1202dc7f797491e",
+      "name": "Pool Salon",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 619,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109586126761522853746/photos\"\u003ePool Salon\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAALKoBOhxtgIOsLtqM3VujIKsel6gRQBvNW_rkhCOd34UEopYgmSaOjktZn2tIz9snu5QtcTaj05so7N1kCqazLXLJhOLP7TIrYn2CM2O9tPDoSeer-tUsGY6F7Kt01lLjdz062M2PjSlPx8RyrR_CxHyUSD3nu4dRI93UOkpFwyjEhBvhI6vUAQxS008h-sXFYflGhQnYdBXdG0suZQzPVMcpqyui_XaIA",
+          "width": 930
+        }
+      ],
+      "place_id": "ChIJJwPqwgpz_UYRA73GCrpmg3s",
+      "reference": "CmRRAAAAUdxadzsi4HmcSgsO5PUijQryVNEce25zDxR7Vx2oKtIinDA0LVPBRe6F4cg9zRcH8m9rwSLTT8lTk2I22BTGIvTANMm6k9bwJy7ZJRG7Lb4_f9Ijkz8rTSKa4Yuf5cB3EhD1EuHKEu7I9CWtHryVJAEtGhTAjQqsRRNqUuhs-zYE1FpzDpyp6A",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Targ Rybny 10a, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3532569,
+          "lng": 18.6617916
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3533965,
+            "lng": 18.6618513
+          },
+          "southwest": {
+            "lat": 54.3528381,
+            "lng": 18.66177170000001
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "eb33c3f7cda5c4ea5002695f41a79a21bc1559eb",
+      "name": "Ołowianka",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1899,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/112055021288480927704/photos\"\u003eŁukasz Cupryjak\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAFdAIDJrCkUZCfN27pU5kNyJHIO9w0I-eurRcbAGEn6N0kseEzMBDx-TH59zUrGZeVz2ySVW6h2u_kqXIv2OFHLBDVxdtp6L2LHEjk6RMs0XwCSKn71kxkd2SEmSO_7x0mREc-RLGY-nxPdsv1aOV4waQAcsWRMRr4BztJjk7Ex-EhCzr6Iw4Of9Z_qTu3IsmLYHGhRszAao-d3LGvFRtJEjas071Mecgg",
+          "width": 3368
+        }
+      ],
+      "place_id": "ChIJpzJBsQtz_UYRnwnIB-lfHgg",
+      "rating": 4.3,
+      "reference": "CmRRAAAA6qfYNjSNRs5ReWwSBMfLAQv7XYDlqpDnI55Yq7LzxIyqZhGFyHhhw5WOdHzMnYCCux_IRqn5ajhtS_5lvRXtugpCjKHCjkQzBT5R1r83W4sMhEH_zRgIBcjfxK1Pr7ACEhBpg6zf5GU-n5KbJBBfOKwkGhRAdMgq9k856e0acXX5jp1O1kH3PA",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Ołowianka 3A, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.35007539999999,
+          "lng": 18.6516014
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3501503,
+            "lng": 18.6516569
+          },
+          "southwest": {
+            "lat": 54.3498507,
+            "lng": 18.6514349
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "ccfbaa139009395785cc4853e0a0bd80265d3a7b",
+      "name": "Browar Piwna",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111348194153646077749/photos\"\u003eDuncan Bain\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAHLntYn790FlnFU5RZ28VnMhXj1evkqfGgl1dbz8uqikoT_ePh7kFRASXGfZknzZBTsT4s76QlyLE3bQUKI4Yg2qqZ4eGodC0wHR5ff98FHZ2x3xRZ6cSWa-PHMuRoRlub5XkDyhXfEsPKtWndfuTVWW67MAABkFDnzgkoGRXEn5EhDcnMbQw0vBQPfYxLSbKYyOGhSGgMEEllDFDBqkfK36s_QvTxEtkg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ_YVTlJ9z_UYR9p8LFD7i_WE",
+      "rating": 3.9,
+      "reference": "CmRRAAAA9HSfd5ktJck-SehiyTz78FEBkB3_1FLuLwl6waJ6LDc4k4-a4zUDrLt4ZcshDQDzt1NGg6xgLbG7vtbe_bLaJiJ5Y8Gljt58TwvT9ZuquzzOj7LgKOCAEeUnKUUUidkNEhCxPtBJwTJI7g4fEVtHsYOhGhS6wNo94yOygChCCAjIubS3JH1Hiw",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Piwna 50/51, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.349322,
+          "lng": 18.652173
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.34939159999999,
+            "lng": 18.65224885
+          },
+          "southwest": {
+            "lat": 54.3492988,
+            "lng": 18.65194545
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "a0dfb158b76e0494ede0aa4b7a2cf77ecdb35ece",
+      "name": "Red Light",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1423,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118057658992043780224/photos\"\u003eRed Light\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBdwAAAPhwGrTYkJLiTU0DTAS3K32TiWquP-L98ZWRxOXIkHb_kio2L5cg9IiGD3xpDiYp6_w_84xLi-oFqD1xXUrnV_bAu_u7H8wPPMwama2g9q_4bkA8PRq2u0xiEsxGnzNT6q4Oxs6IRlk8BhQcRVZE5nkr6WxfNvqvuzDSJm43kAFrEhAr9Cnbqkj46m71iOowbAnPGhQucfThklaJbf6PDDjwi9U0YQPooA",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJQUvOSaBz_UYRDrIT-oPnHww",
+      "rating": 4.4,
+      "reference": "CmRRAAAA9KKJGDtJiJhmn4NIAtNChIjApXL0QmlWt-qAfK5SnY0YaMF2tfL_-N62C_EGhaXXSH7a1pnfr9zh5M7XNUWqO764d7YedukBsYwWct1lAkSVTaCYhvShtqB7z8B8DcRTEhCl-bAgkmp0Y88a5ig176VuGhSp_AXSW9GwgI5w7ORO1zo85Tpq-Q",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Kaletnicza, Gdańsk"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 54.3489827,
+          "lng": 18.6536962
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 54.3491231,
+            "lng": 18.65381350000001
+          },
+          "southwest": {
+            "lat": 54.3489359,
+            "lng": 18.65365709999999
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id": "58bb67688b19f871d4f8bfb2cc038571fdb1a767",
+      "name": "No To Cyk",
+      "photos": [
+        {
+          "height": 683,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/113124015122821347914/photos\"\u003eNo To Cyk\u003c/a\u003e"
+          ],
+          "photo_reference": "CoQBcwAAANcQdlw4j-Xb6DfrGqLXeIGgcmWewsaAO-z_6HM0e1WqRzmBlp1VUZtHikUDjgSECu8qe-vai68GLJtR0sNRNt_wQaPm9B5323SHbwz9lM0935FU-KrYsfTHNP1fY5TRgx0U3qY445XE3fXzqnjzKq0E7ah_tojCwlMM4tlYUp9oEhCUqOGLjEkw60y3fWukWsHwGhRejeN0ytnMBeEoQrwR_ewGKxHreQ",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJ29Y6LqBz_UYRiDo9-EL8Pkk",
+      "rating": 4.3,
+      "reference": "CmRRAAAACkf0NY9J1fp57R2lGzWU_xohC3Z6qpUTsXG3A-4_GCdZW5inXpZAAOcclR5XG4J7R9GdfIoPxtpp1KtkMmzboR8TDvi4NM50gf0UqN71tA3VKqytKNd75qUnpq2B7dbOEhC-zrzMdNW_Aypq-AZl_5vpGhSc7CgUqTdBoH4dZtqel1oWYxwZWg",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Chlebnicka 2, Gdańsk"
+    }
+  ],
+  "status": "OK"
+}

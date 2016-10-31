@@ -109,12 +109,17 @@ class Mapper implements MapperInterface
         $keySize = count($keyList);
 
         $result = $data;
-        $i      = 0;
-        while (!is_null($result) && $i < $keySize) {
-            $keyItem    = $keyList[$i];
-            $result     = $result[$keyItem] ?? null;
-            $i++;
+        foreach($keyList as $item) {
+            $result = $result[$item] ?? null;
         }
+
+//        $result = $data;
+//        $i      = 0;
+//        while (!is_null($result) && $i < $keySize) {
+//            $keyItem    = $keyList[$i];
+//            $result     = $result[$keyItem] ?? null;
+//            $i++;
+//        }
 
         return $result;
     }

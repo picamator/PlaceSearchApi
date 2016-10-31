@@ -19,6 +19,7 @@ class BarProvider implements ControllerProviderInterface
     public function connect(Application $app)
     {
         // routing
+        /** @var \Silex\ControllerCollection $bar */
         $bar = $app["controllers_factory"];
 
         $bar->get("/", "Picamator\\PlaceSearchApi\\App\\Controller\\BarController::getBar");
