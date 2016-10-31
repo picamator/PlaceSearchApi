@@ -11,4 +11,10 @@ Id  | Summary | Description
 5   | Extend number of search result up to 60 | Use next_page_token, more details is [here](https://developers.google.com/places/web-service/search#PlaceSearchPaging)
 6   | Add more resources | See full list of Google supported [places types](https://developers.google.com/places/web-service/supported_types)
 7   | Use Elesticsearch to keep search result | It'll decrease requests to Google service
-
+8   | Add configuraton structure validator via [TreeBuilder](http://symfony.com/doc/current/components/config/definition.html) |
+9   | Add configuration caching | 
+10  | Add better user data validation | 
+11  | Add automatic documentation where all code examples are automatically tested 
+12  | Add more examples how to customize | 
+13  | Add loaded tests to understand real capacity
+14  | Optimize performance: concentrate on nested loops and possibility to reuse objects, apply iterators where it's needed

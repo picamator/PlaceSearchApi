@@ -106,20 +106,10 @@ class Mapper implements MapperInterface
     private function getData(string $key, array $data)
     {
         $keyList = explode(self::$sourceSeparator, $key);
-        $keySize = count($keyList);
-
-        $result = $data;
+        $result  = $data;
         foreach($keyList as $item) {
             $result = $result[$item] ?? null;
         }
-
-//        $result = $data;
-//        $i      = 0;
-//        while (!is_null($result) && $i < $keySize) {
-//            $keyItem    = $keyList[$i];
-//            $result     = $result[$keyItem] ?? null;
-//            $i++;
-//        }
 
         return $result;
     }

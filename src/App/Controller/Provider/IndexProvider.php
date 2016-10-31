@@ -7,11 +7,11 @@ use Silex\Api\ControllerProviderInterface;
 use Silex\Application;
 
 /**
- * Bar provider
+ * Index provider
  *
  * @codeCoverageIgnore
  */
-class BarProvider implements ControllerProviderInterface
+class IndexProvider implements ControllerProviderInterface
 {
     /**
      * {@inheritdoc}
@@ -22,7 +22,7 @@ class BarProvider implements ControllerProviderInterface
         /** @var \Silex\ControllerCollection $bar */
         $bar = $app['controllers_factory'];
 
-        $bar->get('/', 'Picamator\\PlaceSearchApi\\App\\Controller\\BarController::getBar');
+        $bar->get('/', 'Picamator\\PlaceSearchApi\\App\\Controller\\IndexController::index');
 
         // not implemented
         $bar->post('/', 'Picamator\\PlaceSearchApi\\App\\Controller\\ErrorController::getNotImplemented');

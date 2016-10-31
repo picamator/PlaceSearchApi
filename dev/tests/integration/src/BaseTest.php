@@ -43,7 +43,7 @@ abstract class BaseTest extends WebTestCase
      *
      * @return string
      */
-    protected function getUri(string $path) : string
+    protected function getUri(string $path = '') : string
     {
         $uri = ltrim($path, '/');
 

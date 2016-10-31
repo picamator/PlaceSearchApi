@@ -1,6 +1,18 @@
 Place Search Api
 ================
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/3d5ba498-102e-43de-8b16-f8f53b95a080/mini.png)](https://insight.sensiolabs.com/projects/3d5ba498-102e-43de-8b16-f8f53b95a080)
+
+Master
+------
+[![Build Status](https://travis-ci.org/picamator/PlaceSearchApi.svg?branch=master)](https://travis-ci.org/picamator/PlaceSearchApi)
+[![Coverage Status](https://coveralls.io/repos/github/picamator/PlaceSearchApi/badge.svg?branch=master)](https://coveralls.io/github/picamator/PlaceSearchApi?branch=master)
+
+Dev
+---
+[![Build Status](https://travis-ci.org/picamator/PlaceSearchApi.svg?branch=dev)](https://travis-ci.org/picamator/PlaceSearchApi)
+[![Coverage Status](https://coveralls.io/repos/github/picamator/PlaceSearchApi/badge.svg?branch=dev)](https://coveralls.io/github/picamator/PlaceSearchApi?branch=dev)
+
 RESTfull API to provide search places around choosing radius. 
 In other words it can answer to "Where are bars in 2km near me?".
 
@@ -14,6 +26,11 @@ Requirements
 * [MongoDB](https://www.mongodb.com/)
 * [Mongodb pecl](https://github.com/mongodb/mongo-php-library)
 * [RabbitMQ](https://www.rabbitmq.com)
+
+Installation
+------------
+* Run composer install --no-dev
+* Create `/config/parameters.yaml` and put data using [parameters.yaml.dist](config/parameters.yml.dist) as example
 
 Specification
 -------------
@@ -100,9 +117,9 @@ Architecture is based on Hexagonal Architecture. To see what that architecture i
 PlaceSearchApi has those layers:
 
 1. Framework: Silex
-2. Application: RabbitMQ messages listeners, Cache adapters, Logger adapters, Controllers
-3. Model (Domain): Repositories, Managers, Repository Factories
-4. Data (Domain): value objects, collections, factories
+2. Application: App
+3. Domain: Search, Engine, Command
+4. Core Domain: Model
 
 ### RabbitMQ
 [RabbitMQ](https://www.rabbitmq.com) is using to execute technical tasks such as logging, caching without impact to current request.
@@ -128,14 +145,56 @@ But each entity saves in separate cache.
 
 Extensibility
 -------------
+PlaceSearchApi follows loyer architecture with DI using Interfaces therefore it's possible to provide any modification.
 
-### Data mapping schema
-@in-progress
+### How to change Framework
+PlaceSearchApi is using Silex with controllers as a services so to use aoother frmaework ti's need:
+
+* inject controllers services to new ones
+* put DI instantiating to new frameworks bootstrap
+
+### Add new place type
+PlaceSearchApi supports for now `Bar` to add more places it's need only send parameter to `Service/Place/GetService`.
+
+### Extend response data
+To make possible return working hours in api response it's need:
+
+* update `Model\Data\Place` value objects interface and builders
+* update `Engine\GoogleSearchPlace\SchemaCollectionFactory`
+
+### Use different HTTP client
+* implement interface `Search\Api\Http\ClientInterface`
+* update DI configuration
+
+Dependency
+----------
+That section describes how PlaceSearchApi deals with dependency.
+
+### Framework dependency
+PlaceSearchApi does not have Framework dependency:
+
+* all controllers are services
+* domain does not use Frameworks components
+
+### 3-rd party dependency
+PlaceSearchApi uses own Interfaces and wrappers over 3-rd party applications additionally it's catch and resent own Exceptions.
+
+### Code coupling
+Having layer architecture additional with composition bring independent and clear communication between modules.
+
+Here is a list of rules that were placed over PlaceSearchApi:
+
+* layer SHOULD throw only it's own exceptions
+* message SHOULD go directly from top layer to inner one not vice versa
+* using interfaces as dependency
+* keeping value objects immutable
+* depending on abstraction
 
 Documentation
 -------------
 * UML class diagram: [class.diagram.png](doc/uml/class.diagram.png)
 * Use case diagram: [activity.diagram.png](doc/uml/activity.diagram.png)
+* Component diagram: [activity.diagram.png](doc/uml/component.diagram.png)
 
 Developing
 ----------

@@ -10,7 +10,7 @@ class BarTest extends BaseTest
         $client = $this->createClient();
         $client->followRedirects(true);
 
-        $client->request('GET', $this->getUri('api/bar/'));
+        $client->request('GET', $this->getUri('api/v1/bar/'));
 
         // status
         $this->assertTrue($client->getResponse()->isOk());
@@ -44,7 +44,7 @@ class BarTest extends BaseTest
         $client = $this->createClient();
         $client->followRedirects(true);
 
-        $client->request($method, $this->getUri('api/bar/'));
+        $client->request($method, $this->getUri('api/v1/bar/'));
 
         // status
         $this->assertFalse($client->getResponse()->isOk());

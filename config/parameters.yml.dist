@@ -6,7 +6,7 @@ http_client_place:
   key: 'You Google Place token: https://developers.google.com/places/web-service/get-api-key'
   proxy: '192.168.0.104:8888'
 
-  # set up ssl on your server
+  # set up ssl on your server on dev. machine it can be false
   verify: true
 
   parameters:
