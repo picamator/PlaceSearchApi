@@ -23,6 +23,12 @@ class ObjectManager implements ObjectManagerInterface
     */
     public function create(string $className, array $arguments = [])
     {
+        // invalid class name
+        if(empty($className) || !class_exists($className)) {
+            throw new RuntimeException(sprintf('Class "%s" does not exist', $className));
+        }
+
+        // without arguments
         if (empty($arguments)) {
             return new $className();
         }

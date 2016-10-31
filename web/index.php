@@ -1,4 +1,7 @@
 <?php
-require_once __DIR__.'/../vendor/autoload.php';
+ini_set('display_errors', 0);
 
-echo 'Hello Place Search Api';
+require_once __DIR__ . '/../vendor/autoload.php';
+$app = require __DIR__ . '/../src/app.php';
+
+$app->run();

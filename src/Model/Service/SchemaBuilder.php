@@ -11,8 +11,6 @@ use Picamator\PlaceSearchApi\Model\Exception\RuntimeException;
 
 /**
  * Build Schema value object
- *
- * @codeCoverageIgnore
  */
 class SchemaBuilder implements SchemaBuilderInterface
 {
@@ -60,6 +58,8 @@ class SchemaBuilder implements SchemaBuilderInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @codeCoverageIgnore
      */
     public function setSource(string $source) : SchemaBuilderInterface
     {
@@ -70,6 +70,8 @@ class SchemaBuilder implements SchemaBuilderInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @codeCoverageIgnore
      */
     public function setDestination(string $destination) : SchemaBuilderInterface
     {
@@ -80,6 +82,8 @@ class SchemaBuilder implements SchemaBuilderInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @codeCoverageIgnore
      */
     public function setBuilder(string $builder) : SchemaBuilderInterface
     {
@@ -90,6 +94,8 @@ class SchemaBuilder implements SchemaBuilderInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @codeCoverageIgnore
      */
     public function setSchemaCollection(CollectionInterface $schemaCollection) : SchemaBuilderInterface
     {
@@ -107,7 +113,7 @@ class SchemaBuilder implements SchemaBuilderInterface
             || is_null($this->destination)
             || is_null($this->builder)
         ) {
-            throw new RuntimeException('Required fields "source,  destination or builder" was not set');
+            throw new RuntimeException('Required fields "source, destination or builder" was not set');
         }
 
         /** @var SchemaInterface $result */

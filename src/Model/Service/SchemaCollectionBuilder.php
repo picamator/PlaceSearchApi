@@ -5,6 +5,7 @@ namespace Picamator\PlaceSearchApi\Model\Service;
 
 use Picamator\PlaceSearchApi\Model\Api\Data\CollectionInterface;
 use Picamator\PlaceSearchApi\Model\Api\Data\SchemaInterface;
+use Picamator\PlaceSearchApi\Model\Api\ObjectManagerInterface;
 use Picamator\PlaceSearchApi\Model\Api\Service\SchemaCollectionBuilderInterface;
 
 /**

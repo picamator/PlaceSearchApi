@@ -49,4 +49,12 @@ class Location implements LocationInterface , \JsonSerializable
     {
         return $this->data;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __debugInfo()
+    {
+        return $this->data;
+    }
 }

@@ -3,10 +3,11 @@ declare(strict_types = 1);
 
 namespace Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\Http;
 
-use Picamator\PlaceSearchApi\Model\Api\Http\ClientInterface;
-use Picamator\PlaceSearchApi\Model\Api\Http\CrawlerInterface;
+use Picamator\PlaceSearchApi\Search\Api\Http\ClientInterface;
+use Picamator\PlaceSearchApi\Search\Api\Http\CrawlerInterface;
 use Picamator\PlaceSearchApi\Model\Exception\CrawlerException;
 use Picamator\PlaceSearchApi\Model\Exception\InvalidArgumentException;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Crawler
@@ -37,18 +38,19 @@ class Crawler implements CrawlerInterface
      */
     public function get(array $query) : array
     {
-        $url = http_build_query($query);
+        $url = '?' . http_build_query($query);
 
         try {
             $response = $this->client->get($url);
-            $body = $response->getBody();
 
             // http status
             if ($response->getStatusCode() !== 200) {
                 throw new CrawlerException(
-                    sprintf('Invalid response status code "%d", body "%s"', $response->getStatusCode(), serialize($body))
+                    sprintf('Invalid response status code "%d"', $response->getStatusCode())
                 );
             }
+
+            $body = $this->getBody($response);
 
             // status result
             if ($body['status'] !== self::$successStatus) {
@@ -64,5 +66,30 @@ class Crawler implements CrawlerInterface
         }
 
         return $result;
+    }
+
+    /**
+     * Retrieve body
+     *
+     * @param ResponseInterface $response
+     *
+     * @return array
+     *
+     * @throws CrawlerException
+     */
+    private function getBody(ResponseInterface $response) : array
+    {
+        $response->getBody()->seek(0);
+        $body = $response->getBody()->getContents();
+        $body = json_decode($body, true);
+
+        // wrong json format
+        if (is_null($body)) {
+            throw new CrawlerException(
+                sprintf('Cannot decode response body "%s"', json_last_error_msg())
+            );
+        }
+
+        return $body;
     }
 }

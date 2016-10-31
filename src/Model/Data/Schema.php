@@ -82,4 +82,18 @@ class Schema implements SchemaInterface
     {
        return $this->schemaCollection;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __debugInfo()
+    {
+        return [
+            'source'            => $this->source,
+            'destination'       => $this->destination,
+            'builder'           => $this->builder,
+            'schemaCollection'  => $this->schemaCollection,
+
+        ];
+    }
 }

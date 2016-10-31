@@ -22,7 +22,7 @@ class MapperTest extends BaseTest
     private $schemaCollectionMock;
 
     /**
-     * @var \Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface | \PHPUnit_Framework_MockObject_MockObject
+     * @var \Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface | \PHPUnit_Framework_MockObject_MockObject
      */
     private $barBuilderMock;
 
@@ -41,7 +41,7 @@ class MapperTest extends BaseTest
         $this->schemaCollectionMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Data\CollectionInterface')
             ->getMock();
 
-        $this->barBuilderMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface')
+        $this->barBuilderMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface')
             ->getMock();
 
         $this->locationBuilderMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Service\LocationBuilderInterface')
@@ -53,11 +53,13 @@ class MapperTest extends BaseTest
     public function testMap()
     {
         $data = [
-            'id'        => 1,
-            'place_id'  => 1,
-            'location'  => [
-                'lat' => 10,
-                'lng' => 10
+            'id'        => '2a293ddb8ddfdc1d65274d12c8465e50a3fe68ef',
+            'place_id'  => 'ChIJkaVEf3Vz_UYRQdJXi93rMuo',
+            'geometry' => [
+                'location'  => [
+                    'lat' => 10,
+                    'lng' => 10
+                ]
             ],
             'name' => 'Somewhere'
         ];
@@ -76,7 +78,7 @@ class MapperTest extends BaseTest
 
         $schemaIdMock->expects($this->once())
             ->method('getBuilder')
-            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface');
+            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface');
 
         $schemaIdMock->expects($this->once())
             ->method('getSchemaCollection');
@@ -95,7 +97,7 @@ class MapperTest extends BaseTest
 
         $schemaPlaceIdMock->expects($this->once())
             ->method('getBuilder')
-            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface');
+            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface');
 
         $schemaPlaceIdMock->expects($this->once())
             ->method('getSchemaCollection');
@@ -106,7 +108,7 @@ class MapperTest extends BaseTest
 
         $schemaLocationMock->expects($this->once())
             ->method('getSource')
-            ->willReturn('location');
+            ->willReturn('geometry.location');
 
         $schemaLocationMock->expects($this->once())
             ->method('getDestination')
@@ -114,7 +116,7 @@ class MapperTest extends BaseTest
 
         $schemaLocationMock->expects($this->once())
             ->method('getBuilder')
-            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface');
+            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface');
 
         // schema latitude mock
         $schemaLatitudeMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Data\SchemaInterface')
@@ -185,7 +187,7 @@ class MapperTest extends BaseTest
 
         $schemaNameMock->expects($this->once())
             ->method('getBuilder')
-            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface');
+            ->willReturn('Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface');
 
         $schemaNameMock->expects($this->once())
             ->method('getSchemaCollection');
@@ -206,7 +208,7 @@ class MapperTest extends BaseTest
         $this->objectManagerMock->expects($this->atLeastOnce())
             ->method('create')
             ->willReturnCallback(function($argument) {
-                return $argument === 'Picamator\PlaceSearchApi\Model\Api\Service\BarBuilderInterface'
+                return $argument === 'Picamator\PlaceSearchApi\Model\Api\Service\PlaceBuilderInterface'
                     ? $this->barBuilderMock
                     : $this->locationBuilderMock;
 
@@ -218,41 +220,20 @@ class MapperTest extends BaseTest
     /**
      * @expectedException \Picamator\PlaceSearchApi\Model\Exception\RuntimeException
      */
-    public function failedMap()
+    public function testFailedMap()
     {
         $data = [
             'id' => 1
         ];
 
-        // schema id mock
-        $schemaIdMock = $this->getMockBuilder('Picamator\PlaceSearchApi\Model\Api\Data\SchemaInterface')
-            ->getMock();
-
-        $schemaIdMock->expects($this->once())
-            ->method('getSource')
-            ->willReturn('id');
-
-        $schemaIdMock->expects($this->once())
-            ->method('getDestination')
-            ->willReturn('id');
-
-        $schemaIdMock->expects($this->once())
-            ->method('getBuilder');
-
-        $schemaIdMock->expects($this->once())
-            ->method('getSchemaCollection');
-
         // schema collection mock
-        $schemaData = [
-            $schemaIdMock
-        ];
-
+        $schemaData = [];
         $this->schemaCollectionMock->expects($this->once())
             ->method('getIterator')
             ->willReturn(new \ArrayIterator($schemaData));
 
-        // object manager mock
-        $this->objectManagerMock->expects($this->atLeastOnce())
+        // never
+        $this->objectManagerMock->expects($this->never())
             ->method('create');
 
         $this->mapper->map($this->schemaCollectionMock, $data);

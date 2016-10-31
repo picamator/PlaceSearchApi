@@ -26,14 +26,14 @@ The endpoint is `http://place-search.dev/api/v1` where
 ### Resources
 Name  | Method | Required parameters    | Optional parameters   | Example
 ---   | ---    | ---                    | ---                   | ---
-bar   | GET    | name, location, radius | lang | GET:bar?location="54.3476107,18.6503288"&radius="2000"
+bar   | GET    | location, radius       | language              | GET:bar?location="54.3476107,18.6503288"&radius="2000"
 
 ### Parameters
 Name     | Type          | Default               | Description | Value range
 ---      | ---           | ---                   | ---         | ---
 location | String,String | 54.3476107,18.6503288 | Comma separated latitude, longitude. Default value is [Neptune’s Fountain in Gdańsk](https://www.google.com.ua/maps/place/Fontanna+Neptuna/@54.3488332,18.6539283,18z/data=!4m13!1m7!3m6!1s0x46fd73a1d2d03071:0x80de874a0a33d731!2sFontanna+Neptuna!3b1!8m2!3d54.348545!4d18.6532295!3m4!1s0x46fd73a1d2d03071:0x80de874a0a33d731!8m2!3d54.348545!4d18.6532295)| For latitude number in range [-90, 90]. For longitude number in range [-180, 180].
 radius   | Integer       | 2000                  | Radius over location point in meters | Radius should be in range [1, 50 000]
-lang     | String        | en                    | Two character language code | See the [list of supported languages](https://developers.google.com/maps/faq#languagesupport) by Google Places.
+language | String        | en                    | Two character language code | See the [list of supported languages](https://developers.google.com/maps/faq#languagesupport) by Google Places.
 
 ### Response
 #### Bar
@@ -61,9 +61,6 @@ Response:
         }
     ],
     "count": 1,
-    "link": [
-        {"type": "self", "uri": "/bar?location='54.3476107,18.6503288'&radius=2000"}
-    ],
     "code": 200
 }
 ```
@@ -71,7 +68,6 @@ where:
 * `data` - bar's collection
 * `data[0]` - first bar, the bar structure is a limit version of [Google Place Search Response](https://developers.google.com/places/web-service/search#PlaceSearchPaging)
 * `count` - number of entities inside collection
-* `link` - hypermedia links
 * `code` - http status code
 
 The limit for number of bars in response is 20. That limitation is a result of MVP choose and can be extended in next version.
@@ -129,6 +125,12 @@ It's automatically invalidate after 24 hours.
 Moreover it's implemented functionality to avoid saving duplicate information in cache.
 In other words cache key builds based on query parameters and contains only list of location coordinates.
 But each entity saves in separate cache.
+
+Extensibility
+-------------
+
+### Data mapping schema
+@in-progress
 
 Documentation
 -------------

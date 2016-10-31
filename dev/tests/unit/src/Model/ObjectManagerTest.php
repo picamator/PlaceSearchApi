@@ -37,7 +37,27 @@ class ObjectManagerTest extends BaseTest
      */
     public function testFailCreate()
     {
-        $this->objectManager->create('\Picamator\PlaceSearchApi\Model\ObjectManager', [1, 2]);
+        $this->objectManager->create('Picamator\PlaceSearchApi\Model\ObjectManager', [1, 2]);
+    }
+
+    /**
+     * @dataProvider providerNoExistCreate
+     *
+     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\RuntimeException
+     *
+     * @param string
+     */
+    public function testNoExistCreate($className)
+    {
+        $this->objectManager->create($className);
+    }
+
+    public function providerNoExistCreate()
+    {
+        return [
+            ['Test'],
+            ['']
+        ];
     }
 
     public function providerCreate()

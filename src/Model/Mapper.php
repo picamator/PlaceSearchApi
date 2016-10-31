@@ -12,6 +12,12 @@ use Picamator\PlaceSearchApi\Model\Exception\RuntimeException;
 class Mapper implements MapperInterface
 {
     /**
+     * @todo use private constant ofter migration to PHP7.1
+     * @var string
+     */
+    private static $sourceSeparator = '.';
+
+    /**
      * @var ObjectManagerInterface
      */
     private $objectManager;
@@ -41,7 +47,7 @@ class Mapper implements MapperInterface
             $source         = $item->getSource();
             $destination    = $this->getMethodName($item->getDestination());
             $builder        = $this->getBuilder($item->getBuilder());
-            $dataItem       = $data[$source] ?? null;
+            $dataItem       = $this->getData($source, $data);
 
             // run nested schema
             $schemaCollection = $item->getSchemaCollection();
@@ -54,9 +60,7 @@ class Mapper implements MapperInterface
 
         // validate build, just in case
         if (!isset($builder) || !method_exists($builder, 'build')) {
-            throw new RuntimeException(
-                sprintf('Builder "%s" does not have "build" method', get_class($builder))
-            );
+            throw new RuntimeException('Builder does not have "build" method');
         }
 
         return $builder->build();
@@ -85,9 +89,33 @@ class Mapper implements MapperInterface
     private function getBuilder(string $className)
     {
         if (empty($this->builderContainer[$className])) {
-            $this->builderContainer[$className] = $this->objectManager->create($className);
+            $this->builderContainer[$className] = $this->objectManager->create($className, [$this->objectManager]);
         }
 
         return $this->builderContainer[$className];
+    }
+
+    /**
+     * Retrieve data
+     *
+     * @param string $key
+     * @param array $data
+     *
+     * @return mixed
+     */
+    private function getData(string $key, array $data)
+    {
+        $keyList = explode(self::$sourceSeparator, $key);
+        $keySize = count($keyList);
+
+        $result = $data;
+        $i      = 0;
+        while (!is_null($result) && $i < $keySize) {
+            $keyItem    = $keyList[$i];
+            $result     = $result[$keyItem] ?? null;
+            $i++;
+        }
+
+        return $result;
     }
 }
