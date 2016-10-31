@@ -1,5 +1,5 @@
 <?php
-namespace Picamator\PlaceSearchApi\Model\Exception;
+namespace Picamator\PlaceSearchApi\Search\Exception;
 
 /**
  * Crawler exception

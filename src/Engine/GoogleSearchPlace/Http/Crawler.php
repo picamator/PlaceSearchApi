@@ -5,7 +5,7 @@ namespace Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\Http;
 
 use Picamator\PlaceSearchApi\Search\Api\Http\ClientInterface;
 use Picamator\PlaceSearchApi\Search\Api\Http\CrawlerInterface;
-use Picamator\PlaceSearchApi\Model\Exception\CrawlerException;
+use Picamator\PlaceSearchApi\Search\Exception\CrawlerException;
 use Picamator\PlaceSearchApi\Model\Exception\InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 

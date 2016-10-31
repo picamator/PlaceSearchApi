@@ -15,7 +15,7 @@ Interface CrawlerInterface
      *
      * @return array
      *
-     * @throws CrawlerExceptionException
+     * @throws CrawlerException
      */
     public function get(array $query) : array;
 }

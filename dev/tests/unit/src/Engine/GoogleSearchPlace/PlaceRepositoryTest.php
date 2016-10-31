@@ -2,7 +2,7 @@
 namespace Picamator\PlaceSearchApi\Tests\Unit\Engine\GoogleSearchPlace;
 
 use Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\PlaceRepository;
-use Picamator\PlaceSearchApi\Model\Exception\CrawlerException;
+use Picamator\PlaceSearchApi\Search\Exception\CrawlerException;
 use Picamator\PlaceSearchApi\Model\Exception\RuntimeException;
 use Picamator\PlaceSearchApi\Tests\Unit\BaseTest;
 

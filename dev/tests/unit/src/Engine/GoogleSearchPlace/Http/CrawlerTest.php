@@ -76,7 +76,7 @@ class CrawlerTest extends BaseTest
     }
 
     /**
-     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\CrawlerException
+     * @expectedException \Picamator\PlaceSearchApi\Search\Exception\CrawlerException
      */
     public function testFailedHttpStatusGet()
     {
@@ -100,7 +100,7 @@ class CrawlerTest extends BaseTest
     }
 
     /**
-     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\CrawlerException
+     * @expectedException \Picamator\PlaceSearchApi\Search\Exception\CrawlerException
      */
     public function testFailedResultStatusGet()
     {
@@ -135,7 +135,7 @@ class CrawlerTest extends BaseTest
     }
 
     /**
-     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\CrawlerException
+     * @expectedException \Picamator\PlaceSearchApi\Search\Exception\CrawlerException
      */
     public function testFailedGet()
     {
@@ -150,7 +150,7 @@ class CrawlerTest extends BaseTest
     }
 
     /**
-     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\CrawlerException
+     * @expectedException \Picamator\PlaceSearchApi\Search\Exception\CrawlerException
      */
     public function testFailedEncodeGet()
     {

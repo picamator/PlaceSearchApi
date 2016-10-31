@@ -11,7 +11,6 @@ use Silex\Application;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -58,7 +57,7 @@ class ServiceProvider implements ServiceProviderInterface, BootableProviderInter
             if ($code === 404) {
                 return $errorController->getNotFound($request, $app, $e, $code);
             }
-            
+
             return $errorController->getInternalServer($request, $app, $e, $code);
         });
     }

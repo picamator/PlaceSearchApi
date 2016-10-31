@@ -8,7 +8,7 @@ use Picamator\PlaceSearchApi\Model\Api\Service\PlaceCollectionBuilderInterface;
 use Picamator\PlaceSearchApi\Search\Api\Http\CrawlerInterface;
 use Picamator\PlaceSearchApi\Model\Api\MapperInterface;
 use Picamator\PlaceSearchApi\Model\Api\PlaceRepositoryInterface;
-use Picamator\PlaceSearchApi\Model\Exception\CrawlerException;
+use Picamator\PlaceSearchApi\Search\Exception\CrawlerException;
 use Picamator\PlaceSearchApi\Model\Exception\RepositoryException;
 use Picamator\PlaceSearchApi\Model\Exception\RuntimeException;
 
