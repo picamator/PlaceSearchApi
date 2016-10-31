@@ -194,7 +194,7 @@ Documentation
 -------------
 * UML class diagram: [class.diagram.png](doc/uml/class.diagram.png)
 * Use case diagram: [activity.diagram.png](doc/uml/activity.diagram.png)
-* Component diagram: [activity.diagram.png](doc/uml/component.diagram.png)
+* Component diagram: [component.diagram.png](doc/uml/component.diagram.png)
 
 Developing
 ----------
