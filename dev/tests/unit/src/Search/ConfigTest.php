@@ -51,6 +51,10 @@ class ConfigTest extends BaseTest
                 [],
                 ['test'],
                 null
+            ], [
+                ['test' => 1],
+                ['invalidKey'],
+                null
             ]
         ];
     }

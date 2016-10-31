@@ -15,6 +15,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Initiate main services
+ *
+ * @codeCoverageIgnore
  */
 class ServiceProvider implements ServiceProviderInterface, BootableProviderInterface
 {

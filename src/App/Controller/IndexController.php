@@ -9,6 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Index controller
+ *
+ * @codeCoverageIgnore
  */
 class IndexController
 {
@@ -51,7 +53,6 @@ class IndexController
 </html>
 
 EOD;
-
 
         return new Response($message);
     }

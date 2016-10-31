@@ -56,4 +56,58 @@ class SchemaBuilderTest extends BaseTest
             ->setBuilder($builder)
             ->build();
     }
+
+    /**
+     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\RuntimeException
+     */
+    public function testFailedNodBuilderBuild()
+    {
+        $source       = 'id';
+        $destination  = 'id';
+
+        // never
+        $this->objectManagerMock->expects($this->never())
+            ->method('create');
+
+        $this->builder
+            ->setSource($source)
+            ->setDestination($destination)
+            ->build();
+    }
+
+    /**
+     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\RuntimeException
+     */
+    public function testFailedNodDestinationBuild()
+    {
+        $source   = 'id';
+        $builder  = 'id';
+
+        // never
+        $this->objectManagerMock->expects($this->never())
+            ->method('create');
+
+        $this->builder
+            ->setSource($source)
+            ->setBuilder($builder)
+            ->build();
+    }
+
+    /**
+     * @expectedException \Picamator\PlaceSearchApi\Model\Exception\RuntimeException
+     */
+    public function testFailedNodSourceBuild()
+    {
+        $destination    = 'id';
+        $builder        = 'id';
+
+        // never
+        $this->objectManagerMock->expects($this->never())
+            ->method('create');
+
+        $this->builder
+            ->setDestination($destination)
+            ->setBuilder($builder)
+            ->build();
+    }
 }

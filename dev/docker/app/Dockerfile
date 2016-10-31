@@ -104,6 +104,10 @@ RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
 RUN echo "extension=mongodb.so" >> /etc/php/7.0/apache2/php.ini
 
+# display errors
+RUN echo "display_errors = 1" >> /etc/php/7.0/cli/php.ini
+RUN echo "display_errors = 1" >> /etc/php/7.0/apache2/php.ini
+
 # web server
 EXPOSE 80
 CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
