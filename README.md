@@ -98,6 +98,7 @@ All errors message have one format that is described bellow:
 
 #### HTTP codes
 Table bellow shows list of supported HTTP codes.
+
 Code | Message                      | Description
 ---  | ---                          | ---             
 500  | 500 Internal Server Error    | Critical application error
