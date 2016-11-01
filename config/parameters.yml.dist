@@ -1,0 +1,17 @@
+http_client_place:
+  endpoint: 'https://maps.googleapis.com/maps/api'
+  service: 'place'
+  operation: 'nearbysearch'
+  format: 'json'
+  key: 'You Google Place token: https://developers.google.com/places/web-service/get-api-key'
+  proxy: '192.168.0.104:8888'
+
+  # set up ssl on your server on dev. machine it can be false
+  verify: true
+
+  parameters:
+    # Neptune’s Fountain in Gdańsk
+    location: '54.3476107,18.6503288'
+    radius: 2000
+    language: 'en'
+    type: 'bar'

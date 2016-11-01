@@ -1,0 +1,110 @@
+services:
+  # Model
+  # =====
+  model_object_manager:
+    class: 'Picamator\PlaceSearchApi\Model\ObjectManager'
+
+  model_collection_factory:
+    class: 'Picamator\PlaceSearchApi\Model\Service\CollectionFactory'
+    arguments: ['@model_object_manager']
+
+  model_schema_collection_builder:
+    class: 'Picamator\PlaceSearchApi\Model\Service\SchemaCollectionBuilder'
+    arguments: ['@model_object_manager']
+
+  model_schema_builder:
+    class: 'Picamator\PlaceSearchApi\Model\Service\SchemaBuilder'
+    arguments: ['@model_object_manager']
+
+  model_mapper:
+    class: 'Picamator\PlaceSearchApi\Model\Mapper'
+    arguments: ['@model_object_manager']
+
+  model_place_collection_builder:
+    class: 'Picamator\PlaceSearchApi\Model\Service\PlaceCollectionBuilder'
+    arguments: ['@model_object_manager']
+
+  # Search
+  # ======
+  search_error_builder:
+    class: 'Picamator\PlaceSearchApi\Search\Service\ErrorBuilder'
+    arguments: ['@model_object_manager']
+
+  search_http_client:
+    class: 'Picamator\PlaceSearchApi\Search\Http\Client'
+    arguments: ['@guzzle_client']
+
+  search_config:
+    class: 'Picamator\PlaceSearchApi\Search\Config'
+    factory: ['Picamator\PlaceSearchApi\App\Di\ConfigFactory', 'create']
+    arguments: ['@model_object_manager']
+
+  search_response_builder:
+    class: 'Picamator\PlaceSearchApi\Search\Service\ResponseBuilder'
+    arguments: ['@model_object_manager']
+
+  # Search:handler
+  # --------------
+  search_handler_cache:
+    class: 'Picamator\PlaceSearchApi\Search\Handler\Cache'
+
+  search_handler_empty_data:
+    class: 'Picamator\PlaceSearchApi\Search\Handler\EmptyData'
+    arguments: ['@model_collection_factory']
+
+  search_handler_engine:
+    class: 'Picamator\PlaceSearchApi\Search\Handler\Engine'
+    arguments: ['@engine_google_place_repository']
+
+  # Engine
+  # ======
+  engine_google_place_repository:
+    class: 'Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\PlaceRepository'
+    arguments: ['@engine_http_crawler', '@engine_schema_collection', '@model_mapper', '@model_place_collection_builder']
+
+  engine_http_crawler:
+    class: 'Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\Http\Crawler'
+    arguments: ['@search_http_client']
+
+  engine_schema_collection:
+    class: 'Picamator\PlaceSearchApi\Model\Data\Collection'
+    factory: ['Picamator\PlaceSearchApi\App\Di\GoogleSearchPlace\SchemaCollectionFactory', 'create']
+    arguments: ['@engine_schema_collection_factory']
+
+  engine_schema_collection_factory:
+    class: 'Picamator\PlaceSearchApi\Engine\GoogleSearchPlace\SchemaCollectionFactory'
+    arguments: ['@model_schema_collection_builder', '@model_schema_builder']
+
+  # App
+  # ===
+
+  # App:service\error
+  # -----------------
+  app_error_internal_server_service:
+    class: 'Picamator\PlaceSearchApi\App\Service\Error\InternalServerService'
+    arguments: ['@search_error_builder']
+
+  app_error_not_found_service:
+    class: 'Picamator\PlaceSearchApi\App\Service\Error\NotFoundService'
+    arguments: ['@search_error_builder']
+
+  app_error_not_implemented_service:
+    class: 'Picamator\PlaceSearchApi\App\Service\Error\NotImplementedService'
+    arguments: ['@search_error_builder']
+
+  # App:service/Bar
+  # ---------------
+  app_place_get_service:
+    class: 'Picamator\PlaceSearchApi\App\Service\Place\GetService'
+    arguments: ['@search_handler_engine', '@search_handler_cache', '@search_handler_empty_data', '@search_response_builder']
+
+  # Guzzle
+  # ======
+  guzzle_client:
+    class: 'GuzzleHttp\Client'
+    factory: ['Picamator\PlaceSearchApi\App\Di\Guzzle\ClientFactory', 'create']
+    arguments: ['@search_config', '@model_object_manager']
+
+  guzzle_client_mock:
+    class: 'GuzzleHttp\Client'
+    factory: ['Picamator\PlaceSearchApi\Tests\Integration\Fixture\Guzzle\ClientFactory', 'create']
