@@ -99,7 +99,7 @@ All errors message have one format that is described bellow:
 #### HTTP codes
 Table bellow shows list of supported HTTP codes.
 Code | Message                      | Description
----  | ---                          |              
+---  | ---                          | ---             
 500  | 500 Internal Server Error    | Critical application error
 501  | 501 Not Implemented          | HTTP method was not implemented for that resource
 404  | 404 Not Found                | Resource was not found
