@@ -4,8 +4,6 @@ Docker
 Application environment has several containers:
 
 * web - Apache2.4 + php7.0, see [Dockerfile](app/Dockerfile)
-* mongo - official [MongoDB docker](https://hub.docker.com/_/mongo/)
-* rabbitmq - official [RabbitMQ docker](https://hub.docker.com/_/rabbitmq/)
 
 Pre instalation
 --------------

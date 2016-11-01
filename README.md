@@ -23,9 +23,6 @@ Requirements
 ------------
 * [PHP 7.0](http://php.net/manual/en/migration70.new-features.php)
 * [Silex](http://silex.sensiolabs.org/)
-* [MongoDB](https://www.mongodb.com/)
-* [Mongodb pecl](https://github.com/mongodb/mongo-php-library)
-* [RabbitMQ](https://www.rabbitmq.com)
 
 Installation
 ------------
@@ -121,34 +118,12 @@ PlaceSearchApi has those layers:
 3. Domain: Search, Engine, Command
 4. Core Domain: Model
 
-### RabbitMQ
-[RabbitMQ](https://www.rabbitmq.com) is using to execute technical tasks such as logging, caching without impact to current request.
- 
-Queue               | Message | Description
----                 | ---     | ---  
-logData             | '{"level": "info", "msg": "Data was send to 3-rd party server"}' | Log technical data
-saveCache           | '{"id": ...}' | Save data to cache
-
-### MongoDB
-[MongoDB](https://www.mongodb.com/) serves as a data storage for:
-
-* logger's data
-* cache
-
-### Cache
-Cache is used if user does not change location in 4 square meters.
-It's automatically invalidate after 24 hours. 
-
-Moreover it's implemented functionality to avoid saving duplicate information in cache.
-In other words cache key builds based on query parameters and contains only list of location coordinates.
-But each entity saves in separate cache.
-
 Extensibility
 -------------
-PlaceSearchApi follows loyer architecture with DI using Interfaces therefore it's possible to provide any modification.
+PlaceSearchApi follows layer architecture with DI using Interfaces therefore it's possible to provide any modification.
 
 ### How to change Framework
-PlaceSearchApi is using Silex with controllers as a services so to use aoother frmaework ti's need:
+PlaceSearchApi is using Silex with controllers as a services so to use another framework:
 
 * inject controllers services to new ones
 * put DI instantiating to new frameworks bootstrap

@@ -52,7 +52,7 @@ RUN apt-get -y install libapache2-mod-php7.0
 RUN a2enmod rewrite
 
 # apache server name
-RUN echo "ServerName localhost" >> /etc/apache2/httpd.conf
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # apache virtual host
 ADD ./app/config/apache/place-search.dev.conf /etc/apache2/sites-available/
@@ -98,11 +98,6 @@ RUN echo "zend_extension = /usr/lib/php/20151012/xdebug.so" >> /etc/php/7.0/apac
 RUN echo "xdebug.remote_enable = 1" >> /etc/php/7.0/apache2/conf.d/20-xdebug.ini
 RUN echo "xdebug.remote_autostart = 1" >> /etc/php/7.0/apache2/conf.d/20-xdebug.ini
 RUN echo "xdebug.remote_host = $host_ip" >> /etc/php/7.0/apache2/conf.d/20-xdebug.ini
-
-# mongodb
-RUN pecl install mongodb
-RUN echo "extension=mongodb.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
-RUN echo "extension=mongodb.so" >> /etc/php/7.0/apache2/php.ini
 
 # display errors
 RUN echo "display_errors = 1" >> /etc/php/7.0/cli/php.ini
