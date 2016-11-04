@@ -116,7 +116,7 @@ PlaceSearchApi has those layers:
 
 1. Framework: Silex
 2. Application: App
-3. Domain: Search, Engine, Command
+3. Domain: Search, Engine
 4. Core Domain: Model
 
 Extensibility
@@ -153,7 +153,7 @@ PlaceSearchApi does not have Framework dependency:
 * domain does not use Frameworks components
 
 ### 3-rd party dependency
-PlaceSearchApi uses own Interfaces and wrappers over 3-rd party applications additionally it's catch and resent own Exceptions.
+PlaceSearchApi uses own Interfaces and wrappers over 3-rd party applications additionally it's catch and resend own Exceptions.
 
 ### Code coupling
 Having layer architecture additional with composition bring independent and clear communication between modules.
