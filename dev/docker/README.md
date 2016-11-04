@@ -45,12 +45,6 @@ Please configure you `host` in you host machine:
 1. Add line `place-search.dev 0.0.0.0`
 2. Open `http://place-search.dev:8080` in your browser
 
-### MongoDB
-in-progress
-
-### RabbitMQ
-in-progress
-
 Configuration IDE (PhpStorm)
 ---------------------------- 
 ### Remote interpreter
